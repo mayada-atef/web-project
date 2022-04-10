@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	
+
+#box{
+		background:#66ffff;
+		color:#004d4d;
+		font-size: 30px;
+		font-family: Segoe Print;
+		border-radius: 20px;
+		width: 100%;
+	}
+	input{
+	width: 300px;
+	 padding: 10px 15px;
+    margin: 13px 0;
+    display: inline-block;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+	select{
+	width: 200px;
+	 padding: 7px 13px;
+    margin: 11px 0;
+    display: inline-block;
+    border: 1px solid  #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    outline: none;
+    cursor: pointer;
+}
+	.h{
+	width: 100px
+}
+
+	
+    sub{
+    	background-color: #f1f1f1; 
+	width: 150px;
+	cursor: pointer;
+    }
+
+    input[type=text]:focus {
+    background-color:  #f1f1f1;
+     border: 2px solid  #f1f1f1;
+    
+}</style>
+<script>
+  
+
+ function myFunction1() {
+    var y = document.getElementById("t1");
+    y.value = y.value.toUpperCase();
+    var y = document.getElementById("t2");
+    y.value = y.value.toUpperCase();
+    var y = document.getElementById("t5");
+    y.value = y.value.toUpperCase();
+}
+/*function choice(){
+	 ch=document.forms[0].comit.value;
+	alert("your commity is" + ch);
+}*/
+function message() {
+    alert("if you want to reset the form enter ok");
+}
+ function confirmInput() {
+ 	var w=Date();
+    t1 = document.forms[0].t1.value;
+    alert("Hello " + t1 + "! We will call you to set the appointment of an interview                  ." + w);
+  }
+</script>
+
+
+	
+</head>
+<body>
+	
+<center>
+<form onreset="message()" onsubmit="confirmInput()">
+	<div id="box">
+		<div id="text">
+			<h1>MSP form</h1>
+     
+	<label>Frist Name</label>
+
+	<input type="text" id="t1" placeholder="Your first name.." onchange="myFunction1()" required>
+	<br>
+	
+	<label>Second Name </label> 
+	
+	<input type="text" id="t2" placeholder="Your second name.."  onchange="myFunction1()" required>
+	<br>
+	<label>Email</label>
+	
+	<input type="email" name="t3" placeholder="name&number@yahoo.com" required >
+	<br>
+	<label>Phone</label>
+	 
+	
+	<input type="tel" name="t4" placeholder="Your number.."  pattern="[1-9]{11}" title="enter eleven number only" required>
+	<br>
+	<label>Faculty</label>
+	
+	<input type="text" id="t5" placeholder="Your faculty.."  onchange="myFunction1()" required>
+	<br>
+	<label><span class="fa fa-dot-circle-o"></span>&nbsp;Gender:</label>
+    <input type="radio" name="t5" class="h">Male
+     <input type="radio" name="t5" class="h">Female<br>
+
+     <lable>Birthday</lable>
+ 
+    <input type="date" name="bday">
+  <br>
+     <label>Department:</label>
+<select >
+	<option>communication</option>
+	<option>power</option>
+	<option>machanics</option>
+	<option>civil</option>
+	<option>architect</option>
+</select><br>
+<label>Year:</label>
+<select>
+	<option>Prep</option>
+	<option>1st </option>
+	<option>2nd</option>
+	<option>3rd</option>
+	<option>4th</option>
+</select><br>
+<label>commities:</label>
+<select  onchange="choice()" id="comit">
+	<option>operation</option>
+	<option>HR</option>
+	<option>media</option>
+
+	<option>Web</option>
+	<option>Android</option>
+	<option>microsoft</option>
+	<option>embeded system</option>
+</select>
+<br>
+
+
+	<input type="submit" name="submit" value="send form" class="sub">
+	<input type="reset" value="reset form" class="sub">
+
+</div>
+</div>
+</center>
+</form>
+</body>
+</html>

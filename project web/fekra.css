@@ -1,0 +1,78 @@
+   .header img {float: right; max-width: 200px; height: 180px;}
+   .header {text-align: left; line-height:1; height: 180px;}
+   #t1{ font-size:100px;color:#006622; }
+   #t2{font-family: Segoe Print; font-size: 50px;margin-left: 10%; color: #006622;}
+  .topnav { list-style-type: none; background-color: #006622; position:sticky; 
+      top: 0; margin: 0; padding: 0; overflow: hidden;max-width: 100%;font-size: 17px;
+       font-family: Arial; letter-spacing: 1px;}
+   .topnav li{float: left;}
+  .topnav li a{ display: block ;color:white;text-decoration: none; padding: 14px 16px; }
+   .topnav li a:hover { background-color:#003311; }
+   .boxes { overflow: auto; font-size: 30px;background-color :#f1f1f1; max-width: 70%;
+    color:#006622;  border:solid #f1f1f1 ;border-radius:10px; margin:20px; padding: 30px;}
+   
+
+   div.gallary {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+
+}
+
+div.gallary:hover {
+    border: 1px solid #777;
+}
+
+div.gallary img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+div.photo{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
+
+div.photo:hover {
+    border: 1px solid #777;
+}
+
+div.photo img {
+    width: 100%;
+    height: auto; 
+}
+
+div.review{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 600px;
+    box-sizing: border-box;
+  }
+
+div.review:hover {
+    border: 1px solid #777;
+}
+
+div.review img {
+    width: 100%;
+    height: auto; 
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background:#006622 ;
+    color: white;
+    position:relative;
+    top:300px;
+    
+}
+.footer a{color: white; font-size: 30px; }
+.footer a:hover{color: #003311;}

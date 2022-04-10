@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MSP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .topbar { list-style-type: none; background-color: #008080 ; 
+                 position:sticky; top: 0; margin: 0; padding: 0; 
+                 overflow: hidden;max-width: 100%;font-size: 17px;
+                font-family: Arial; letter-spacing: 1px;}
+        .topbar li{float: left;}
+        .topbar li a{ display: block ;color:white;text-decoration: none; padding: 14px 16px; }
+        .topbar li a:hover { background-color:  #00b3b3; }
+        .join{
+            width: 100%;
+            height: 100px;
+            background-color: gray;
+        }
+        #logo{
+            float: right;
+            margin: 0px;
+            width: 200px;
+            height: 200px;}
+        
+        .t1{
+            font-size: 80px;
+            color: #264d73;}
+        .t2{
+            font-size: 40px;
+            color: #264d73;
+            padding-left: 30px;}
+
+
+        
+        .box2 img{
+            width: 300px;
+            height: 400px;
+        }
+        
+        .box,.box1,.box2{
+            border-radius: 10px; overflow: auto;font-size: 30px;
+            background-color:#ccffff; color: #264d73;border-color:#f1f1f1;
+            border-style: solid;
+            margin: 20px;
+            padding: 30px;  
+        }
+         
+
+div.pictureevent:hover {
+    border: 2px solid #777;
+}
+div.nameevent {
+    padding: 15px;
+    text-align: center;
+}
+div.photo img:hover{
+    border: 2px solid #00002f}
+
+#t2{
+        width: 1000px;
+        overflow: hidden;
+
+        }
+
+#boximg{
+     border-radius: 10px; overflow: auto;font-size: 30px;
+            background-color:#b3ffff; color: #264d73;border-color:#ffffff;
+            border-style: solid;
+            margin: 20px;
+            padding: 30px; 
+}
+</style>
+    <script type="text/javascript">
+        var i=0;
+        var images=[];
+        var time=3000;
+        images[0]='board.jpg';
+        images[1]='family0.jpg';
+        images[2]='family.jpg';
+
+        function changeimg(){
+            document.slide.src=images[i];
+            if( i<images.length-1){
+                i++;
+            }
+            else{
+                i=0;
+            }
+            setTimeout("changeimg()",time);
+
+        }
+        window.onload = changeimg;
+    </script>
+</head>
+<body>
+<div id="badge">
+    <a name="above"></a>
+   <a name="t1"></a>
+    <img src="msp.jpg" alt="msp" id="logo">
+    
+ 
+	<p> <span class="t1">MSP Tech Club</span><span class="t2">
+     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shoubra faculty of engineering
+     <br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Banha University</span></p>
+	
+	
+
+        <ul class="topbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#about">about</a></li>
+		 <li><a href="#commity">commity</a></li>
+         <li><a href="#mission">mission</a></li>
+		<li><a href="#events">events</a></li>
+		<li><a href="#contact">contact</a></li>
+		
+        
+        
+	
+    
+    </ul>
+    
+    <a name="about"></a>
+
+
+    <div class="box">
+    <h3><i class="fa fa-paper-plane" style="font-size:36px"></i>&nbsp;Msp program</h3>
+     <hr>
+    <p>Microsoft student partners (msps) are student technology leaders, empowered to build technology communities on their campus and share their deep knowledge and passion for technology with their fellow classmates</p></div>
+
+    <div class="box">
+    	
+    	<h3><i class="fa fa-star" style="font-size:36px"></i>&nbsp;MSP Tech Club shoubra</h3>
+        <hr>
+        
+        <p>We are acting as a partner to microsoft through microsoft student partners program.this program aims to deliver the latest, brightest and coolest technologies to the students in the college, so we as msps organizing events,sessions,workshops,competitions and alot more to make sure that students in the college updtated by the latest technologies and able to work with it. to sum it up, the msp tech club is a technology club by msps in the college to help all student to get the benefits mentioned above.</p>
+</div>
+
+
+<a name="commity"></a>
+<div class="box1">
+    	<h3><i class="fa fa-group" style="font-size:36px"></i>&nbsp;Commities</h3>
+    	<hr>
+        <table border="0" cellspacing="5" cellpadding="5">
+            <tr >
+        <th><i class="fa fa-user" style="font-size:36px"></i>&nbsp;Non Technical</th>
+        <td><i class="fa fa-user" style="font-size:36px"></i>&nbsp;Technical</td>
+        <td rowspan="2" ><img src="mspcity.jpg" alt="msp city" width="600" height="350"></td>
+        <tr>
+            <td>
+    	<ul>
+    		<li>operation
+    			<ul type="square">
+    				<li>BR</li>
+    				<li>FR</li>
+    				<li>Logistec</li>
+    			</ul>
+    		</li>
+    		<li> HR</li>
+    		<li>MEDIA</li></ul></td>
+            <td>
+                <ul>
+    		    <li>Web</li>
+    		    <li>Microsoft&nbsp;&nbsp;&nbsp;<b>[</b><i class="fa fa-file-word-o"></i>-<i class="fa fa-file-excel-o" ></i>-<i class="fa fa-file-powerpoint-o"></i>
+                 <i class="fa fa-mixcloud" ></i><b>]</b></li>
+    		    <li>Android&nbsp;&nbsp;&nbsp;<i class="fa fa-android" ></i></li>
+    		   <li>
+    			embeded system
+    		   </li></td></ul>
+</table></div>
+
+<a name="mission"></a>
+<div class="box1">
+        <h3><i class="fa fa-flag" style="font-size:36px"></i>Mission of committees</h3>
+        <hr>
+        <hr>
+<table border="0">
+            <tr>
+                <td>
+                <h4><i class="fa fa-chevron-right" style="font-size:36px"></i>PR&nbsp; &amp; FR </h4>
+                
+                <p>Representing MSP in all events ,they talk with students<br> about Microsoft's technologies.and you will enhance your <br>presentation skills and self-confidence to the level that you <br>want to be and responsible for finance to fund all team events.</p></td>
+                <td><img src="presntion.jpg" width="500" height="250"></td>
+            </tr>
+            <tr>
+            <td><p>
+            <h3><dl><dt><i class="fa fa-chevron-right" style="font-size:36px"></i><abbr title="Human source">HR</abbr></dt></h3>
+ <dd>they are the spirit of the place , responsible 
+    <br>for recruiting and evaluating<br>
+     They also make motivation <br>and get feedback for all members.</dd>
+     </dl></p></td>
+                    <td><img src="hr.jpg" width="500" height="250"></td>
+           </tr>
+          
+<tr><td><h3><i class="fa fa-chevron-right" style="font-size:36px"></i>OC&nbsp;&amp;Logistics</h3>
+<p>
+Responsible for ushering attendees during the event.<br>
+Responsible for reserving places and organizing our events.<br>
+plan and manage logistics, Booth, transportation<br>
+Make deals with suppliers, manufacturers, and consumer</p></td>
+<td><h4><i class="fa fa-mail-forward"></i>&nbsp;They make amagazine </h4>
+    
+<center><button><a href="#mag"><i class="fa fa-caret-down" style="font-size:48px;" title="click to go to this magazine "></i></a></button></center></td> </tr>
+
+<tr>
+<td>
+        <h3><i class="fa fa-chevron-right" style="font-size:36px"></i>Social Media</h3>
+        <p>People who works with creative designs whether<br> for banners ,fliers,brochures,profiles,and covers <br>You will learn how to work on social media <br>on the page of MSP Tech Club.</p>
+</td>
+<td><img src="conect.JPG" width="500" height="250"></td>
+</tr>
+
+<tr>
+    <td>
+    <h3><i class="fa fa-chevron-right" style="font-size:36px"></i>Techincal</h3>
+    <p>In the Technical team we lead the Technology , we are concerning about latest Microsoft technology and our mission is to provide students by the skills needed in today's market inside Microsoft Technologie</p></td>
+    <td><img src="tec.png" width="500" height="250"></td>
+</tr></table>
+</div>
+
+<div id="boximg" >
+    <h3><i class="fa fa-heart" style="font-size:36px"></i> <i> Our Family </i></h3>
+    <hr>
+<center>
+    <img name="slide" width="1000" height="500">
+
+    
+    
+     
+</center>
+    
+
+
+</div>
+
+
+<a name="events"></a>
+<div class="box1">
+    	<h3><i class="fa fa-calendar" style="font-size:36px"></i>&nbsp;events</h3>
+    	<hr>
+        <hr>
+<table>
+    <tr>
+    <td>
+       <div class="pictureevent" >
+        <a href="https://www.facebook.com/events/1673665679519222/" target="_blank">
+        <img src="summercamp.jpg" width="600" height="300" title="summer camp"></a>
+        <div class="nameevent">summer camp</div>
+        </div>
+    <td>
+        <div class="pictureevent">
+        <a href="https://www.facebook.com/events/1692404634377018/" target="_blank">
+        <img src="imaginecuptour.png" width="600" height="300" title="Imagine Camps Tour"></a>
+        <div class="nameevent">Imagine Camps Tour</div>
+       </div>
+    </td></tr>
+<tr>
+    <td><div class="pictureevent">
+        <a href="https://www.facebook.com/events/585739044956620/" target="_blank">
+        <img src="hack.jpg" width="600" height="300" title="hack Day"></a>
+        <div class="nameevent">hack Day</div>
+       </div>
+        </td>
+    <td>
+        <div class="pictureevent">
+        <a href="https://www.facebook.com/events/872999836148631/" target="_blank">
+        <img src="hour of code 1.png" width="600" height="300" title="Hour of code 2.0"></a>
+        <div class="nameevent">Hour of code 2.0</div>
+       </div>
+   </td></tr>
+<tr>
+    <td><div class="pictureevent" >
+        <a href="https://www.facebook.com/events/279374829122331/" target="_blank">
+        <img src="recruit.jpg" width="600" height="300" title="msp recruitment "></a>
+        <div class="nameevent">msp recruitment</div>
+        </div>
+      </td>
+    <td>
+        <div class="pictureevent">
+        <a href="https://www.facebook.com/events/132836904080666/" target="_blank">
+        <img src="hourofcode.jpg" width="600" height="300" title="Our of code"></a>
+        <div class="nameevent">Our of code</div>
+       </div>
+    </td></tr>
+<tr>
+    <td>   <div class="pictureevent">
+        <a href="https://www.facebook.com/events/1897040510338504/" target="_blank">
+        <img src="embeded.jpg" width="600" height="300" title="embeded zone"></a><div class="nameevent">embeded zone</div>
+        </div> 
+
+        </td>
+
+    <td><div class="pictureevent">
+        <a href="https://www.facebook.com/events/1843526872332765/" target="_blank">
+        <img src="rec.jpg" width="600" height="300" title="msp recruitment "></a>
+        <div class="nameevent">msp recruitment </div>
+        </div>
+       </td>
+</tr>
+
+</table>
+
+</div>
+
+
+<a name="mag"></a>
+<div class="box2">
+
+    	<h1><i class="fa fa-cogs" style="font-size:48px"></i>&nbsp;work of the team</h1>
+    	
+    	<h2><i class="fa fa-file-o" style="font-size:24px;"></i>&nbsp;magazine</h2><hr>
+        <div class="photo">
+           
+           <a target="_blank" href="magla1.jpg">
+            <img src="magla1.jpg" alt="1th photo" title="click to read in details ">
+           </a>
+        
+           <a target="_blank" href="magla2.jpg">
+            <img src="magla2.jpg" alt="2th photo" title="click to read in details ">
+           </a>
+        
+           <a target="_blank" href="magla3.jpg">
+            <img src="magla3.jpg" alt="3th photo" title="click to read in details ">
+           </a>
+    
+           <a target="_blank" href="magla4.jpg">
+            <img src="magla4.jpg" alt="4th photo" title="click to read in details ">
+           </a></div>
+</div>
+
+
+<a name="contact"></a>
+
+    <div class="box">
+        <div style="float: left;">
+        <br>
+        <br>
+        <br>
+        <i class="fa fa-facebook-square" style="font-size:36px"></i><a href="https://www.facebook.com/MSPTCSFE/">&nbsp;face book</a><br>
+        <i class="fa fa-twitter-square" style="font-size:36px"></i><a href="https://twitter.com/MspSfe ">&nbsp;twiteer</a><br>
+        <i class="fa fa-youtube-square" style="font-size:36px"></i><a href="https://www.youtube.com/channel/UCZApHsCpwKIiv7mN7_Sf6jw">&nbsp;you tube</a><br>
+        <i class="fa fa-instagram" style="font-size:36px"></i><a href="https://www.instagram.com/mspsfe/">&nbsp;instagram</a><br>
+          <i class="fa fa-linkedin-square" style="font-size:36px"></i><a href="https://www.linkedin.com/company/11322823/">&nbsp;linkedin</a>
+    </div>
+        <div>
+        <table style="float: right;">
+            <tr>
+                <th><i class="fa fa-map-marker" style="font-size:36px;margin-top:0"></i> &nbsp;Map of faculty of engineering</th></tr>
+              <tr><td><a href="https://goo.gl/1z8xiq">  <img src="map.png"  title="to get easy to our faculty" style="float: right;"> </a></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</div>
+
+        
+        
+   <a href="#above"><i class="fa fa-arrow-up" style="float: right; font-size:48px; color: white;margin: 10px 30px;" title="click here to go top page" ></a></i> 
+   <div style="background-color:#008080; height: 70px; ">
+    <center>
+       <button style="width: 150px; height: 50px; margin: 10px;">
+        <a href=" try form.html"><b>join us</b></a></button>
+    </center>
+   </div>
+
+
+
+ 
+</div>
+</body>
+</html>

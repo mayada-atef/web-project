@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>AUA form</title>
+<style type="text/css">
+	.box1{
+		background: #66b3ff;
+		color: #ffffff;
+		font-size: 20px;
+		font-family: Segoe Print;
+		border-radius: 20px;
+		width: 100%;
+		height: auto;}
+
+ h1{
+
+  color: #ffffff
+  font-size:25px;
+  font-family: Segoe Print;
+  margin: 5px 0px;
+}
+
+input{
+	width: 300px;
+	 padding: 10px 15px;
+    margin: 13px 0;
+    display: inline-block;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+input[type=text]:focus {
+    background-color:  #f1f1f1;
+     border: 2px solid  #f1f1f1;
+    
+}
+select{
+	width: 200px;
+	 padding: 7px 13px;
+    margin: 11px 0;
+    display: inline-block;
+    border: 1px solid  #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    outline: none;
+    cursor: pointer;
+}
+
+.h{
+	width: 100px
+}
+.sub{
+	background-color: #f1f1f1; 
+	width: 150px;
+	cursor: pointer;
+}
+</style>
+<script type="text/javascript">
+	function myFunction1() {
+    var y = document.getElementById("l1");
+    y.value = y.value.toUpperCase();
+    var y = document.getElementById("l2");
+    y.value = y.value.toUpperCase();
+    var y = document.getElementById("l4");
+    y.value = y.value.toUpperCase();
+}
+
+function message() {
+    alert("if you want to reset the form enter ok");
+}
+ function confirmInput() {
+ 	var w=Date();
+    l1 = document.forms[0].l1.value;
+    alert("Hello " + l1 + "! We will call you to set the appointment of an interview                  ." + w);
+  }
+</script>
+</head>
+<body>
+<center>
+<form action="/action_page.php" onreset="message()" onsubmit="confirmInput()">
+	<div class="box1">
+
+		<h1><i class="material-icons" style="font-size:36px">assignment</i>&nbsp;AUA Form </h1>
+<label><span class="fa fa-pencil"></span>&nbsp;Frist Name :</label>
+<input type="text" id="l1" placeholder="Your first name.." onchange="myFunction1()" required><br>
+
+<label><span class="fa fa-pencil"></span>&nbsp;Second Name:</label>
+<input type="text" id="l2"  placeholder="Your second name.." onchange="myFunction1()" required><br>
+
+<label><span class="fa fa-pencil"></span>&nbsp;Email :</label>
+<input type="Email" name="l3" placeholder="name&number@yahoo.com" onchange="myFunction1()" required><br>
+
+<label><span class="fa fa-pencil"></span>&nbsp;Faculty :</label>
+<input type="text" id="l4" placeholder="Your faculty.." onchange="myFunction1()" required><br>
+
+<label><span class="fa fa-pencil"></span>&nbsp;Phone :</label>
+<input type="tel" id="l5" placeholder="Your phone number.." pattern="[1-9]{11}" title="enter eleven number only" required><br>
+
+<label><span class="fa fa-dot-circle-o"></span>&nbsp;Gender:</label>
+<input type="radio" name="l6" class="h">Male
+<input type="radio" name="l6" class="h">Female<br>
+<lable>Birthday</lable>
+ 
+    <input type="date" name="bday">
+    <br>
+
+<label>Department:</label>
+<select>
+	<option>communication</option>
+	<option>power</option>
+	<option>machanics</option>
+	<option>civil</option>
+	<option>architect</option>
+</select><br>
+
+<label>Year:</label>
+<select>
+	<option>Prep</option>
+	<option>1st </option>
+	<option>2nd</option>
+	<option>3rd</option>
+	<option>4th</option>
+</select><br>
+
+<label>commities:</label>
+<select>
+	<option>HR</option>
+	<option>FR</option>
+	<option>PR</option>
+	<option>media</option>
+	<option>technical visits</option>
+	
+</select><br>
+
+<input type="submit" name="submit" value="submit" class="sub" >
+<input type="reset" value="reset form" class="sub">
+
+</div>
+</form>
+</center>
+</body>
+</html>
